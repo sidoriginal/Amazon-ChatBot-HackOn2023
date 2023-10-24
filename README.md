@@ -26,6 +26,10 @@ Contextual shopping experience using ChatGPT: We invite you to explore futuristi
 
 By combining generative AI, user experience design, and AWS services, we offer a next-level, contextual shopping experience that revolutionizes the way users interact with Amazon.
 
+## Demo Video
+
+https://youtu.be/86zpsuBkncI?si=0JShaCNnSHgCANj6
+
 ## Screenshots
 
 ![Bot Interface](https://github.com/sidoriginal/Amazon-ChatBot-HackOn2023/blob/main/Screenshots/bot1.png?raw=true)
