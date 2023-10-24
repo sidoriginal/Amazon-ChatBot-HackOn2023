@@ -1,6 +1,27 @@
 # Amazon-ChatBot-HackOn2023
 ![Amazon](https://img.shields.io/badge/Amazon-AmaziBot-orange?labelColor=grey&style=flat&logo=amazon) ![AWS](https://img.shields.io/badge/AWS-EC2-orange?labelColor=grey&style=flat&logo=aws) ![Flask](https://img.shields.io/badge/Flask-Backend-blue?labelColor=grey&style=flat&logo=flask) ![Intents](https://img.shields.io/badge/Intents-grey?style=flat&logo=target) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white) ![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Gunicorn](https://img.shields.io/badge/gunicorn-%298729.svg?style=for-the-badge&logo=gunicorn&logoColor=white) ![Amazon](https://img.shields.io/badge/Amazon-ORANGE?style=flat&logo=Amazon)
 
+## Problem Statement
+
+Theme 1 - Shopping Experience with Generative Al + AWS
+Contextual shopping experience using ChatGPT: We invite you to explore futuristic shopping experience using generative Al for Amazon. Objective is to curate contextual shopping experiences based on individual user's chat session and preferences. AWS can be used for solutioning. E.g. I want to buy best air conditioner for my living room in 30K budget, please suggest me a branded 5 star power rated AC.
+
+## Our Solution
+
+1. Amazon Chatbot: We've developed a specialized chatbot tailored for Amazon's shopping platform which is programmed to greet users, creating a welcoming environment and is capable of understanding and responding to various shopping queries, such as product recommendations.
+
+2. Product Suggestions: Upon receiving a query, the chatbot generates a list of 5 relevant products, complete with essential details like product name, reviews, and ratings which is presented in an interactive card format, making it easy for users to digest information.
+
+3. Add to Cart and Direct Amazon Link: Users have the convenience of adding products directly to their Amazon cart from within the chat interface and clicking on the product card redirects the user to the actual Amazon product page for a more detailed view.
+
+4. Voice-to-Text Integration: To enhance user experience, we've integrated a voice-to-text feature, allowing users to speak their queries instead of typing them.
+
+5. AWS EC2 Hosting: The entire application is hosted on Amazon's EC2, ensuring a scalable and robust solution.
+
+6. Future-Ready: This solution is designed with the future in mind, easily adaptable for more advanced features and integrations. most importantly the virtual try-on feature for clothes , jewelry , furniture and many more.
+
+By combining generative AI, user experience design, and AWS services, we offer a next-level, contextual shopping experience that revolutionizes the way users interact with Amazon.
+
 ## Tech-Stack
 
 This project is a sophisticated chatbot designed to enhance the Amazon shopping experience. It employs a range of technologies to deliver a seamless and interactive user interface:
