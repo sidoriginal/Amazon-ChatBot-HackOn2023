@@ -65,9 +65,9 @@ class AmazonSpider(scrapy.Spider):
                'Price': price, 'AvailableSizes': sizes, 'AvailableColors': colors, 'BulletPoints': bullet_points,
                'SellerRank': seller_rank}
             # self.count+=1
-        df = pd.read_csv('test.csv')
-        if len(df) >= 6:
-            raise CloseSpider('Reached 6 rows in test.csv')
+        # df = pd.read_csv('test.csv')
+        # if len(df) >= 6:
+        #     raise CloseSpider('Reached 6 rows in test.csv')
         # with open('test.csv', 'r') as f:
         #     reader = csv.reader(f)
         #     row_count = sum(1 for row in reader)
