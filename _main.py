@@ -20,7 +20,7 @@ result = None
 
 def run_scrapy(search_sentence):
     global result
-    subprocess.run(["/home/ec2-user/wasp/Amazon-ChatBot-HackOn2023/run_main.sh", search_sentence],shell=True)
+    subprocess.run(["/home/ec2-user/wasp/Amazon-ChatBot-HackOn2023/run_main.sh", search_sentence])
     df = pd.read_csv('test.csv')
     top_rows = df.head(5)
     messages = []
