@@ -24,9 +24,9 @@ By combining generative AI, user experience design, and AWS services, we offer a
 
 ## Screenshots
 
-![Bot Interface](https://github.com/sidoriginal/Amazon-ChatBot-HackOn2023/blob/main/Screenshots/bot2.png?raw=true)
-
 ![Bot Interface](https://github.com/sidoriginal/Amazon-ChatBot-HackOn2023/blob/main/Screenshots/bot1.png?raw=true)
+
+![Bot Interface](https://github.com/sidoriginal/Amazon-ChatBot-HackOn2023/blob/main/Screenshots/bot2.png?raw=true)
 
 ![Scrapy Running](https://github.com/sidoriginal/Amazon-ChatBot-HackOn2023/blob/main/Screenshots/terminal.png?raw=true)
 
