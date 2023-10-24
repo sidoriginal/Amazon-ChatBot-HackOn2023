@@ -20,7 +20,7 @@ result = None
 
 def run_scrapy(search_sentence):
     global result
-    subprocess.run(["run_main.sh", search_sentence])
+    subprocess.run(["run_main.sh", search_sentence],shell=True)
     df = pd.read_csv('test.csv')
     top_rows = df.head(5)
     messages = []
