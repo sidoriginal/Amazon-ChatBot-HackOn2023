@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, jsonify
 from _main import handle_response, get_wit_response
-import torch
 
 app = Flask(__name__)
 
