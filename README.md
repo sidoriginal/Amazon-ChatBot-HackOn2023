@@ -22,6 +22,71 @@ Contextual shopping experience using ChatGPT: We invite you to explore futuristi
 
 By combining generative AI, user experience design, and AWS services, we offer a next-level, contextual shopping experience that revolutionizes the way users interact with Amazon.
 
+## How To Run
+
+Install the following files
+
+```bash
+scrapy
+flask
+numpy
+pandas
+requests
+```
+OR Run 
+
+```bash
+pip install -r requirements.txt
+```
+Make account on [Wit.ai](https://www.wit.ai/) and make new app there, train your chatbot about desired intents and entities. After that in **_main.py** put your own Server Access Token:
+```_main.py
+# Your Wit.ai access token
+access_token = "YOUR_SERVER_ACCESS_TOKEN"
+
+# Base URL for Wit.ai API
+base_url = "https://api.wit.ai"
+
+# Headers for API requests
+headers = {
+    "Authorization": f"Bearer {access_token}"
+}
+```
+
+Now make account on [ScapperApi](https://www.scraperapi.com/) and create account to get API key, then in **amazon_scraper/amazon_scarper/spiders/amazon.py** put your API key:
+```amazon.py
+def start_requests(self):
+        queries.append(self.search_query)
+        for query in queries:
+            url = 'https://www.amazon.in/s?' + urllib.parse.urlencode({'k': query})
+            API = 'YOUR_API_KEY'
+            payload = {'api_key': API, 'url': url, 'country_code': 'in'}
+            proxy_url = 'http://api.scraperapi.com/?' + urllib.parse.urlencode(payload)
+            yield scrapy.Request(proxy_url, callback=self.parse_keyword_response)
+    def parse_keyword_response(self, response):
+        products = response.xpath('//*[@data-asin]')
+        for product in products:
+            asin = product.xpath('@data-asin').extract_first()
+            product_url = f"https://www.amazon.in/dp/{asin}"
+            API = 'YOUR_API_KEY'
+            payload = {'api_key': API, 'url': product_url, 'country_code': 'in'}
+            proxy_url = 'http://api.scraperapi.com/?' + urllib.parse.urlencode(payload)
+            yield scrapy.Request(proxy_url, callback=self.parse_product_page, meta={'asin': asin})
+        next_page = response.xpath('//li[@class="a-last"]/a/@href').extract_first()
+        if next_page:
+            url = urllib.parse.urljoin("https://www.amazon.in",next_page)
+            API = 'YOUR_API_KEY'
+            payload = {'api_key': API, 'url': url, 'country_code': 'in'}
+            proxy_url = 'http://api.scraperapi.com/?' + urllib.parse.urlencode(payload)
+            yield scrapy.Request(proxy_url, callback=self.parse_keyword_response)
+}
+```
+Now run flask app using:
+```bash
+python app.py
+```
+
+Your ChatBot is running now!!
+
 ## Tech-Stack
 
 This project is a sophisticated chatbot designed to enhance the Amazon shopping experience. It employs a range of technologies to deliver a seamless and interactive user interface:
