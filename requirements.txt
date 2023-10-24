@@ -1,0 +1,9 @@
+requests
+scrapy
+urllib
+numpy
+pandas
+flask
+sys
+json
+itemadapter
